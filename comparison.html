@@ -5,13 +5,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dataweek</title>
+    <title>Music Visualizer</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <script src="/script.js" defer></script>
 </head>
 
-<body class="comparison-page">
-    <main>
+<body>
+    <main class="comparison-page">
+        <section class="pop-up pop-up--hidden" id="pop-up">
+            <button class="pop-up__close-button" id="close-pop-up-button">X</button>
+            <div class="pop-up__inner">
+                <h2 class="pop-up__heading">Music Visualizer</h2>
+                <p class="pop-up__text">For this project we have used the data set from the Spotify API which described
+                    different variables of a
+                    song such as the tempo, loudness, energie, and emotion. We have used these variables and connect it
+                    with
+                    a visual atribute. </p>
+                <ul class="pop-up__list">
+                    <li>Tempo - pulsing of the particles</li>
+                    <li>Loudness - amount of particles</li>
+                    <li>Energy - the speed of the movements</li>
+                    <li>Emotion - color of the particles</li>
+                </ul>
+                <p class="pop-up__text">On the comparison page you can compare your favorite song with ours!</p>
+            </div>
+        </section>
+        <section class="comparison-video__container">
+            <video id="angela-song" class="comparison-video__video" autoplay="true" loop="true" muted="true">
+                <source type="video/mp4" src="./media/videos/skit.mp4">
+            </video>
+            <div class="comparison-video__content">
+                <h2 class="comparison-video__title">Angela's song</h2>
+                <div class="comparison-video__buttons">
+                    <a class="comparison-video__link" href="/visualizer.html">View</a>
+                    <button class="comparison-video__mute-button" id="angela-mute-button">UNmute</button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-video__container">
+            <video id="user-song" class="comparison-video__video" autoplay="true" loop="true">
+                <source type="video/mp4" src="./media/videos/amsterdam.mp4">
+            </video>
+            <div class="comparison-video__content">
+                <h2 class="comparison-video__title">Your song</h2>
+
+                <div class="comparison-video__buttons">
+                    <a class="comparison-video__link" href="/visualizer.html">View</a>
+                    <button class="comparison-video__mute-button" id="user-mute-button">mute</button>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-video__container">
+            <video id="cheun-song" class="comparison-video__video" autoplay="true" loop="true" muted="true">
+                <source type="video/mp4" src="./media/videos/earth.mp4">
+            </video>
+            <div class="comparison-video__content">
+                <h2 class="comparison-video__title">Cheun's song</h2>
+                <div class="comparison-video__buttons">
+                    <a class="comparison-video__link" href="/visualizer.html">View</a>
+                    <button class="comparison-video__mute-button" id="cheun-mute-button">unmute</button>
+
+                </div>
+            </div>
+        </section>
+        <button class="close-button" id="open-pop-up-button">?</button>
 
     </main>
 </body>

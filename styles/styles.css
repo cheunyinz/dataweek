@@ -33,7 +33,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "PPStellar-light";
 }
 
 ol,
@@ -143,6 +143,21 @@ body {
   min-height: 100vh;
 }
 
+.visualizer-page__title {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  margin-inline: auto;
+  top: 18rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  z-index: 2;
+  width: max-content;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
 .visualizer-page__background {
   position: fixed;
   min-height: 100vh;
@@ -165,8 +180,13 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.pop-up--home {
+  animation: loadPopup 4s ease-in-out;
+}
+
 .pop-up--hidden {
   opacity: 0;
+  z-index: 1;
 }
 
 .pop-up__close-button {
@@ -265,9 +285,91 @@ body {
   text-transform: uppercase;
 }
 
-/* @media screen and (min-width: 1920px) {
-  .visualizer-page video {
-    min-height: 100vh;
-    min-width: 100vw;
+.comparison-page {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  min-height: 100vh;
+  gap: 0.5rem;
+  background-color: white;
+}
+
+/** COMPARISON PAGE**/
+
+.comparison-video__container {
+  overflow: hidden;
+  position: relative;
+}
+
+.comparison-video__content {
+  color: white;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100%;
+  padding-block: 2rem 5rem;
+}
+
+.comparison-video__title {
+  font-family: "PPStellar-light", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.comparison-video__video {
+  position: absolute;
+  inset: 0;
+  left: -42rem;
+}
+
+.comparison-video__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comparison-video__buttons > *,
+.close-button {
+  appearance: none;
+  background-color: transparent;
+  font-family: "PPStellar-light";
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.comparison-video__link {
+  border: 2px solid white;
+  padding: 0.5rem 1.5rem;
+  min-width: 7rem;
+}
+
+.close-button {
+  position: absolute;
+  border: 2px solid white;
+  padding: 0.25rem 1rem;
+  font-size: 1.5rem;
+  width: fit-content;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 4;
+}
+
+@keyframes loadPopup {
+  0% {
+    opacity: 0;
   }
-} */
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
