@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataweek</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/script.js" defer></script>
+</head>
+
+<body>
+    <main class="visualizer-page">
+        <video id="bg-video" class="visualizer-page__background" autoplay loop>
+            <source type="video/mp4" src="./media/videos/amsterdam.mp4">
+        </video>
+        <section class="pop-up" id="pop-up">
+            <button class="pop-up__close-button" id="close-pop-up-button">X</button>
+            <div class="pop-up__inner">
+                <h2 class="pop-up__heading">Music Visualizer</h2>
+                <p class="pop-up__text">For this project we have used the data set from the Spotify API which described
+                    different variables of a
+                    song such as the tempo, loudness, energie, and emotion. We have used these variables and connect it
+                    with
+                    a visual atribute. </p>
+                <ul class="pop-up__list">
+                    <li>Tempo - pulsing of the particles</li>
+                    <li>Loudness - amount of particles</li>
+                    <li>Energy - the speed of the movements</li>
+                    <li>Emotion - color of the particles</li>
+                </ul>
+                <p class="pop-up__text">On the comparison page you can compare your favorite song with ours!</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content__inner">
+                <form class="filter">
+                    <fieldset>
+                        <legend class="filter__title">Filter</legend>
+                        <label class="filter__label">
+                            Tempo
+                            <input class="filter__input" type="checkbox" checked="checked">
+                        </label>
+                        <label class="filter__label">
+                            Emotion
+                            <input class="filter__input" type="checkbox" checked="checked">
+                        </label>
+                        <label class="filter__label">
+                            Loudness
+                            <input class="filter__input" type="checkbox" checked="checked">
+                        </label>
+                        <label class="filter__label">
+                            Energy
+                            <input class="filter__input" type="checkbox" checked="checked">
+                        </label>
+                    </fieldset>
+                </form>
+                <div class="buttons">
+                    <a class="buttons__comparison-page" href="/comparison.html">Compare</a>
+                    <button id="mute-button">Mute</button>
+                    <button id="open-pop-up-button">?</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
