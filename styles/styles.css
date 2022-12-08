@@ -157,11 +157,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-inline: 5rem;
+  padding-inline: 4rem;
   padding-top: 1rem;
   padding-bottom: 5rem;
   border: 2px white solid;
-  max-width: 50rem;
+  max-width: 40rem;
   transition: 0.3s ease-in-out;
 }
 
@@ -172,7 +172,7 @@ body {
 .pop-up__close-button {
   color: white;
   all: unset;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: sans-serif;
   font-weight: 200;
   margin-left: 100%;
@@ -186,14 +186,13 @@ body {
 
 .pop-up__heading {
   font-family: "PPStellar-light", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .pop-up__text {
-  font-size: 1.5rem;
   font-family: sans-serif;
   font-weight: 200;
 }
@@ -201,7 +200,6 @@ body {
 .pop-up__list {
   margin-block: 1rem;
   padding-left: 2rem;
-  font-size: 1.5rem;
 }
 
 .content {
@@ -223,7 +221,6 @@ body {
 }
 
 .filter {
-  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -262,8 +259,6 @@ body {
   border: 2px solid white;
   padding: 0.5rem 1.5rem;
   height: 100%;
-  font-size: 2rem;
-  font-size: 2rem;
   color: white;
   background-color: transparent;
   cursor: pointer;
